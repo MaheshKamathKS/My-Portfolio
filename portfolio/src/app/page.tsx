@@ -1,8 +1,8 @@
 'use client';
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaJsSquare, FaCogs, FaGithub,FaCoffee } from "react-icons/fa";
 import { SiPhp, SiBootstrap, SiMongodb } from "react-icons/si";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiDocker } from "react-icons/si";
-import { FaGitAlt, FaLinkedin, FaEnvelope, FaArrowDown, FaCode, FaRocket, FaStar,FaPython  } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { FaLinkedin, FaEnvelope, FaArrowDown, FaCode, FaRocket, FaStar,FaPython  } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from "../app/components/Navbar/page";
