@@ -1,22 +1,4 @@
 export default function TalknShopCaseStudyPage() {
-  const techStack = [
-    "React",
-    "JavaScript (ES6+)",
-    "CSS3",
-    "React Router DOM",
-    "Node.js",
-    "Express",
-    "MongoDB Atlas",
-    "JWT",
-    "Vercel",
-    "Railway",
-    "Git",
-    "GitHub",
-    "Visual Studio Code",
-    "Postman",
-    "npm",
-  ];
-
   const keyFeatures = [
     "Dedicated online storefronts for each seller",
     "Centralized dashboard for managing products and orders",
