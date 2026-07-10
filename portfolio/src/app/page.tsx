@@ -4,6 +4,7 @@ import { SiPhp, SiBootstrap, SiMongodb } from "react-icons/si";
 import { SiNextdotjs, SiTypescript, SiTailwindcss, SiDocker } from "react-icons/si";
 import { FaGitAlt, FaLinkedin, FaEnvelope, FaArrowDown, FaCode, FaRocket, FaStar,FaPython  } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from "../app/components/Navbar/page";
 import Background from "../app/components/background/page";
@@ -225,7 +226,7 @@ export default function Home() {
               </motion.span>{" "}
               web experiences with modern technologies.
               <br />
-              Passionate about clean code, stunning designs, and seamless user experiences.
+              Building scalable web applications, SaaS products,and digital experiences that solve real-world problems.
             </motion.p>
           </motion.div>
 
@@ -424,8 +425,10 @@ export default function Home() {
             <div className="relative w-full max-w-sm mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-3xl opacity-30"></div>
               <img
-                src="/maheshKamath.jpg"
+                src="/maheshkamath.png"
                 alt="Mahesh Kamath K S"
+                width={408}
+                height={612}
                 className="relative w-full h-auto rounded-2xl border-4 border-white/20 shadow-2xl"
               />
             </div>
@@ -438,37 +441,42 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
-               <p>
-  I&apos;m a passionate full-stack developer with a strong foundation in building scalable backend systems 
-  and secure applications. My journey in software development began with a curiosity for solving 
-  real-world problems, and it has grown into a dedication to creating reliable, high-impact technologies.
-</p>
-<p>
-  Over the years, I&apos;ve worked on diverse projects — from developing e-commerce platforms like 
-  <strong>TTH E-CART</strong> to full-stack applications for food delivery and dynamic data management systems. 
-  These experiences have strengthened my skills in Python, JavaScript, and modern frameworks while 
-  deepening my understanding of robust backend architectures.
-</p>
-<p>
-  Beyond academics, I enjoy collaborating on freelance projects, exploring new technologies, 
-  and continuously sharpening my problem-solving skills. I believe in writing clean, efficient code 
-  and building digital solutions that are not only functional but also impactful.
-</p>
-<p>
-  My goal is to grow as a full-stack engineer who can seamlessly integrate frontend design 
-  with backend performance, delivering applications that are both user-friendly and scalable.
-</p>
+  <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+  <p>
+    I&apos;m a final-year Information Science Engineering student and Software Developer at
+    <strong> Zupaloop</strong>, passionate about building scalable web applications and solving
+    real-world problems through technology. I enjoy transforming ideas into reliable,
+    high-performance software that delivers meaningful user experiences.
+  </p>
 
-              </div>
+  <p>
+    My work spans modern frontend and backend development using React, TypeScript,
+    Node.js, Express, MongoDB, and MySQL. From developing production-ready applications
+    at Zupaloop to building personal products, I focus on creating scalable,
+    maintainable, and user-centric software.
+  </p>
+
+  <p>
+    Beyond my professional work, I&apos;m currently building <strong>TalknShop</strong>,
+    a multi-vendor e-commerce SaaS platform, while continuously exploring new
+    technologies and modern software architecture. I enjoy turning ideas into
+    products that solve real-world challenges and create lasting value.
+  </p>
+
+  <p>
+    My goal is to grow as a software engineer who builds impactful digital
+    products, contributes to scalable systems, and continuously learns through
+    real-world development experiences.
+  </p>
+</div>
               <div className="mt-8 flex gap-4">
                 <div className="text-center">
-  <div className="text-2xl font-bold text-blue-400">2+</div>
+  <div className="text-2xl font-bold text-blue-400">3+</div>
   <div className="text-sm text-gray-400">Years of Development Experience</div>
 </div>
 
 <div className="text-center">
-  <div className="text-2xl font-bold text-purple-400">6+</div>
+  <div className="text-2xl font-bold text-purple-400">8+</div>
   <div className="text-sm text-gray-400">Major Projects Completed</div>
 </div>
 
@@ -490,8 +498,10 @@ export default function Home() {
               <div className="relative w-full max-w-md mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-3xl opacity-30"></div>
                 <img
-                  src="/maheshkamath.jpg"
+                  src="/maheshkamath.png"
                   alt="Mahesh Kamath K S"
+                  width={408}
+                  height={612}
                   className="relative w-full h-auto rounded-2xl border-4 border-white/20 shadow-2xl"
                 />
               </div>
@@ -542,7 +552,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              My professional journey in{" "}
+              Building products, gaining industry experience, and solving real-world problems.
               <motion.span
                 className={
                   currentColorIndex === 0 
@@ -612,7 +622,7 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     viewport={{ once: true }}
                   >
-                    TTH E-CART – Founder & Operations Lead
+                    Software Engineer
                   </motion.h3>
                   
                   
@@ -628,10 +638,10 @@ export default function Home() {
                         ? "text-base md:text-lg font-semibold text-cyan-400 drop-shadow-lg mb-1 md:mb-0" 
                         : `text-base md:text-lg font-semibold bg-gradient-to-r ${currentTheme.secondary} bg-clip-text text-transparent mb-1 md:mb-0`
                     }>
-                      01Neo (On Site)
+                      Zupaloop
                     </span>
                     <span className="text-gray-400 text-sm md:text-base">
-                      June 2021
+                      Apr 2026 – Present
                     </span>
                   </motion.div>
                   
@@ -644,8 +654,10 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     {[
-                      "Managed product listings, orders, and customer interactions while integrating payment and logistics systems.",
-                      "Oversaw end-to-end operations, including deployment and customer support, generating ₹3 lakhs in revenue within 2 years",
+                      "Develop production-grade web applications using React, TypeScript, Node.js, and modern frontend technologies.",
+                      "Build scalable features, API integrations, and high-performance upload workflows.",
+                      "Collaborate with designers, QA, and backend engineers using Git-based workflows.",
+                      "Optimize application performance, fix production issues, and improve user experience.",
                     ].map((responsibility, index) => (
                       <motion.li
                         key={index}
@@ -675,7 +687,143 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 1.2 }}
                     viewport={{ once: true }}
                   >
-                    {["Team Coordination", "Business Operations & Revenue Management", "Client Communication & Requirement Gathering"].map((tech, index) => (
+                    {["React", "TypeScript", "Node.js", "REST APIs", "Git", "MongoDB"].map((tech, index) => (
+                      <motion.span
+                        key={tech}
+                        className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs font-medium text-gray-300 hover:bg-white/20 hover:text-white transition-all duration-300"
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: 1.3 + index * 0.05 }}
+                        viewport={{ once: true }}
+                        whileHover={{ scale: 1.1, y: -2 }}
+                      >
+                        {tech}
+                      </motion.span>
+                    ))}
+                  </motion.div>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              
+              <div className="hidden md:block absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 opacity-30"></div>
+              
+              
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.02, y: -5 }}
+                className="relative pl-0 md:pl-20 pb-8 md:pb-12 group"
+              >
+                
+                <motion.div
+                  className={`hidden md:block absolute left-2 md:left-6 top-4 md:top-6 w-3 h-3 md:w-4 md:h-4 bg-gradient-to-r ${currentTheme.primary} rounded-full border-2 md:border-4 border-gray-900 group-hover:scale-125 transition-transform duration-300`}
+                  whileHover={{ 
+                    boxShadow: "0 0 20px rgba(96, 165, 250, 0.6)",
+                    scale: 1.3
+                  }}
+                />
+                
+                
+                <motion.div
+                  className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl md:rounded-2xl p-4 md:p-8 hover:bg-white/10 transition-all duration-300 relative overflow-hidden h-full flex flex-col"
+                  whileHover={{ 
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.3)",
+                    borderColor: "rgba(255,255,255,0.3)"
+                  }}
+                >
+                  
+                  <motion.div
+                    className={`absolute inset-0 bg-gradient-to-r ${currentTheme.primary} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                  />
+                  
+                  
+                  <motion.h3
+                    className={
+                      currentColorIndex === 0 
+                        ? "text-lg md:text-2xl font-bold mb-2 text-blue-400 drop-shadow-lg relative z-10" 
+                        : `text-lg md:text-2xl font-bold mb-2 bg-gradient-to-r ${currentTheme.primary} bg-clip-text text-transparent relative z-10`
+                    }
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    Full Stack Developer Intern
+                  </motion.h3>
+                  
+                  
+                  <motion.div
+                    className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 relative z-10"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.7 }}
+                    viewport={{ once: true }}
+                  >
+                    <span className={
+                      currentColorIndex === 0 
+                        ? "text-base md:text-lg font-semibold text-cyan-400 drop-shadow-lg mb-1 md:mb-0" 
+                        : `text-base md:text-lg font-semibold bg-gradient-to-r ${currentTheme.secondary} bg-clip-text text-transparent mb-1 md:mb-0`
+                    }>
+                      Codezyng Private Limited
+                    </span>
+                    <span className="text-gray-400 text-sm md:text-base">
+                      Feb 2026 – Mar 2026
+                    </span>
+                  </motion.div>
+                  
+                  
+                  <motion.ul
+                    className="space-y-3 text-gray-300 relative z-10"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.8 }}
+                    viewport={{ once: true }}
+                  >
+                    {[
+                      "Developed responsive frontend interfaces using React.",
+                      "Integrated REST APIs and backend services.",
+                      "Worked with Node.js, Express, MongoDB, and MySQL.",
+                      "Collaborated with the development team to build and debug production features.",
+                    ].map((responsibility, index) => (
+                      <motion.li
+                        key={index}
+                        className="flex items-start md:items-start"
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.4, delay: 0.9 + index * 0.1 }}
+                        viewport={{ once: true }}
+                        whileHover={{ x: 5 }}
+                      >
+                        <motion.span
+                          className={`hidden md:block text-sm mr-3 mt-1.5 w-2 h-2 bg-gradient-to-r ${currentTheme.accent} rounded-full flex-shrink-0`}
+                          whileHover={{ scale: 1.5 }}
+                        />
+                        <span className="group-hover:text-white transition-colors duration-300 md:ml-0">
+                          {responsibility}
+                        </span>
+                      </motion.li>
+                    ))}
+                  </motion.ul>
+                  
+                  
+                  <motion.div
+                    className="flex flex-wrap gap-2 mt-auto pt-6 relative z-10"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 1.2 }}
+                    viewport={{ once: true }}
+                  >
+                    {["React", "TypeScript", "Node.js", "REST APIs", "Git", "MongoDB"].map((tech, index) => (
                       <motion.span
                         key={tech}
                         className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs font-medium text-gray-300 hover:bg-white/20 hover:text-white transition-all duration-300"
@@ -735,7 +883,7 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 0.8 }}
                     viewport={{ once: true }}
                   >
-                    Freelance Web Developer
+                    Founder & Operations Lead
                   </motion.h3>
                   
                   
@@ -751,10 +899,10 @@ export default function Home() {
                         ? "text-base md:text-lg font-semibold text-pink-400 drop-shadow-lg mb-1 md:mb-0" 
                         : `text-base md:text-lg font-semibold bg-gradient-to-r ${currentTheme.accent} bg-clip-text text-transparent mb-1 md:mb-0`
                     }>
-                      Independent Contractor
+                      TTH E-CART
                     </span>
                     <span className="text-gray-400 text-sm md:text-base">
-                      2023 - 2025
+                      Jun 2021 – Present
                     </span>
                   </motion.div>
                   
@@ -767,11 +915,10 @@ export default function Home() {
                     viewport={{ once: true }}
                   >
                     {[
-    "Managed product listings, orders, and customer interactions for multiple client websites.",
-    "Coordinated with clients to ensure requirements were clearly understood and implemented accurately.",
-    "Integrated payment gateways and logistics systems for smooth operational workflows.",
-    "Oversaw deployment and customer support, ensuring timely updates and issue resolution.",
-    "Maintained client satisfaction through regular communication and efficient project management."
+    "Founded and managed a local e-commerce platform delivering food and groceries.",
+    "Successfully processed more than 7,000 customer orders.",
+    "Generated over ₹3 Lakhs in revenue through efficient business operations.",
+    "Managed logistics, customer support, and platform growth."
 ]
 .map((responsibility, index) => (
                       <motion.li
@@ -802,7 +949,7 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 1.4 }}
                     viewport={{ once: true }}
                   >
-                    {["React", "Next.js", "JavaScript", "CSS3", "HTML5", "Responsive Design", "UI/UX", "Client Relations"].map((tech, index) => (
+                    {["Leadership", "Entrepreneurship", "Operations", "Customer Management", "Business Strategy"].map((tech, index) => (
                       <motion.span
                         key={tech}
                         className="px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs font-medium text-gray-300 hover:bg-white/20 hover:text-white transition-all duration-300"
@@ -1063,7 +1210,7 @@ export default function Home() {
             {[
               { label: "Technologies", value: "12+", icon: "🛠️" },
               { label: "Projects", value: "15+", icon: "🚀" },
-              { label: "Experience", value: "2+", icon: "⚡" },
+              { label: "Experience", value: "3+", icon: "⚡" },
               { label: "Coffee Cups", value: "∞", icon: "☕" },
             ].map((stat, index) => (
               <motion.div
@@ -1150,6 +1297,141 @@ export default function Home() {
               </motion.span>
               {" "}and technical expertise
             </motion.p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="w-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl">
+              <div className="grid lg:grid-cols-2 gap-0">
+                <div className="relative min-h-[320px] lg:min-h-[460px] overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 p-5 sm:p-6 lg:p-8">
+                    <div className="h-full w-full overflow-hidden rounded-2xl border border-white/15 bg-[#0b1020]/90 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+                      <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3">
+                        <span className="h-3 w-3 rounded-full bg-red-400" />
+                        <span className="h-3 w-3 rounded-full bg-yellow-400" />
+                        <span className="h-3 w-3 rounded-full bg-green-400" />
+                        <div className="ml-3 h-2 flex-1 rounded-full bg-white/10" />
+                      </div>
+                      <div className="grid h-[calc(100%-52px)] grid-cols-12 gap-4 p-4 sm:p-6">
+                        <div className="col-span-4 rounded-2xl border border-white/10 bg-gradient-to-b from-blue-500/20 to-transparent p-4">
+                          <div className="h-10 w-10 rounded-xl bg-white/10" />
+                          <div className="mt-5 space-y-3">
+                            <div className="h-3 w-20 rounded-full bg-white/15" />
+                            <div className="h-3 w-28 rounded-full bg-white/10" />
+                            <div className="h-3 w-24 rounded-full bg-white/10" />
+                          </div>
+                          <div className="mt-6 space-y-3">
+                            <div className="h-12 rounded-xl bg-white/10" />
+                            <div className="h-12 rounded-xl bg-white/10" />
+                            <div className="h-12 rounded-xl bg-white/10" />
+                          </div>
+                        </div>
+                        <div className="col-span-8 space-y-4">
+                          <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+                            <div className="flex items-center justify-between gap-4">
+                              <div>
+                                <div className="h-3 w-28 rounded-full bg-white/20" />
+                                <div className="mt-2 h-4 w-44 rounded-full bg-white/10" />
+                              </div>
+                              <div className="rounded-full bg-cyan-400/15 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-cyan-200">
+                                Live Orders
+                              </div>
+                            </div>
+                            <div className="mt-4 grid grid-cols-3 gap-3">
+                              {[0, 1, 2].map((item) => (
+                                <div key={item} className="rounded-xl border border-white/10 bg-[#11182c] p-3">
+                                  <div className="h-3 w-12 rounded-full bg-white/15" />
+                                  <div className="mt-4 h-8 w-20 rounded-full bg-gradient-to-r from-blue-400 to-purple-500" />
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                          <div className="grid grid-cols-2 gap-4">
+                            <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                              <div className="h-3 w-24 rounded-full bg-white/20" />
+                              <div className="mt-4 space-y-3">
+                                <div className="h-3 w-full rounded-full bg-white/10" />
+                                <div className="h-3 w-5/6 rounded-full bg-white/10" />
+                                <div className="h-3 w-2/3 rounded-full bg-white/10" />
+                              </div>
+                            </div>
+                            <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-purple-500/20 to-cyan-500/10 p-4">
+                              <div className="h-3 w-20 rounded-full bg-white/20" />
+                              <div className="mt-4 flex items-end gap-2">
+                                <div className="h-10 flex-1 rounded-t-lg bg-white/15" />
+                                <div className="h-16 flex-1 rounded-t-lg bg-white/20" />
+                                <div className="h-24 flex-1 rounded-t-lg bg-cyan-300/60" />
+                                <div className="h-14 flex-1 rounded-t-lg bg-white/20" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute top-5 left-5 z-10 rounded-full border border-white/20 bg-black/50 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
+                    🚀 Currently Building
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-10 xl:p-12">
+                  <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300/90">
+                  CURRENT PRODUCT
+                  </p>
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+                    TalknShop
+                  </h3>
+                  <p className="mt-3 text-lg sm:text-xl text-gray-300">
+                    Multi-Vendor SaaS Commerce Platform
+                  </p>
+                  <p className="mt-6 max-w-2xl text-base sm:text-lg leading-7 text-gray-300">
+TalknShop is a modern multi-vendor SaaS commerce platform that enables businesses to launch, manage, and scale their own online stores. Built with a focus on performance, scalability, and user experience, it includes seller onboarding, product management, order processing, authentication, dashboards, and a customizable storefront.                  </p>
+
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    {[
+                      "React",
+                      "JavaScript",
+                      "Node.js",
+                      "Express",
+                      "MongoDB",
+                      "CSS",
+                      "JWT",
+                    ].map((tech) => (
+                      <span
+                        key={tech}
+                        className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white/90"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a
+                      href="https://talkn-shop.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 text-white font-semibold shadow-[0_0_24px_rgba(59,130,246,0.45)] ring-1 ring-cyan-300/30 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_34px_rgba(34,211,238,0.55)] hover:ring-cyan-200/50"
+                    >
+                      Live Demo
+                    </a>
+                    <Link
+                      href="/projects/talknshop"
+                      className="px-6 py-3 rounded-full border border-white/20 bg-white/10 text-white font-semibold backdrop-blur-sm transition-transform duration-300 hover:scale-105 hover:bg-white/15"
+                    >
+                      View Case Study
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1507,7 +1789,7 @@ export default function Home() {
               className="text-center"
             >
               <p className="text-gray-400 text-sm md:text-base">
-                © 2025 Mahesh Kamath K S
+                © 2026 Mahesh Kamath K S
               </p>
               <p className="text-gray-500 text-xs md:text-sm mt-1">
                 Crafted with ❤️ and code
