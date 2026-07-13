@@ -267,7 +267,7 @@ export default function Home() {
             </motion.a>
             
             <motion.a
-              href="./cv-eng-.pdf"
+              href="./Mahesh_zupaloop_resume.pdf"
               target="_blank"
               className="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-full border-2 border-white/20 transition-all duration-300 flex items-center gap-3"
               whileHover={{ scale: 1.05, y: -2, borderColor: "rgba(255,255,255,0.5)" }}
